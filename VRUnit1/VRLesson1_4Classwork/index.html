@@ -7,6 +7,7 @@
 
       <!-- Task 1: Wrap the components below into an entity. "Label" it snowman -->
       <!-- Task 2: Duplicate the snowman to different locations and rotation -->
+      <a-box wireframe="true" height="8" width="4" depth="3" rotation="0 30 0" position="-1 0.3 2" scale="0.5 0.5 0.5"> 
         <!-- Body -->
         <a-sphere position="0 0.5 -0.5" radius="1.25" color="white"></a-sphere>
         <a-sphere position="0 2.25 -0.5" radius="1.05" color="white"></a-sphere>
@@ -18,11 +19,55 @@
         <a-cone position="0 3.25 0.5"  rotation="90 0 0" color="tomato" height="0.5" radius-bottom=".1" radius-top="0.01"></a-cone>
         <a-cylinder position="-1.25 2.75 -0.25" color="#A52A2A" rotation="0 0 60" height="2" radius="0.15"></a-cylinder>
         <a-cylinder position="1.25 2.75 -0.25" color="#A52A2A" rotation="0 0 -60" height="2" radius="0.15"></a-cylinder>
+      </a-box>
+
+      <a-box wireframe="true" height="8" width="2" depth="3" rotation="-20 60 0" position="-3 0.3 4" scale="1 1 1"> 
+        <!-- Body -->
+        <a-sphere position="0 0.5 -0.5" radius="1.25" color="white"></a-sphere>
+        <a-sphere position="0 2.25 -0.5" radius="1.05" color="white"></a-sphere>
+        <a-sphere position="0 3.5 -0.5" radius=".85" color="white"></a-sphere>
+        <!-- Eyes -->
+        <a-sphere position="-0.25 3.5 0.25" radius=".15" color="black"></a-sphere>
+        <a-sphere position="0.25 3.5 0.25" radius=".15" color="black"></a-sphere>
+        <!-- Nose and Arms -->
+        <a-cone position="0 3.25 0.5"  rotation="90 0 0" color="tomato" height="0.5" radius-bottom=".1" radius-top="0.01"></a-cone>
+        <a-cylinder position="-1.25 2.75 -0.25" color="#A52A2A" rotation="0 0 60" height="2" radius="0.15"></a-cylinder>
+        <a-cylinder position="1.25 2.75 -0.25" color="#A52A2A" rotation="0 0 -60" height="2" radius="0.15"></a-cylinder>
+      </a-box>
+
+      <a-box wireframe="true" height="8" width="2" rotation="40 -30 0" position="8 0.3 2" scale="2 2 2"> 
+        <!-- Body -->
+        <a-sphere position="0 0.5 -0.5" radius="1.25" color="white"></a-sphere>
+        <a-sphere position="0 2.25 -0.5" radius="1.05" color="white"></a-sphere>
+        <a-sphere position="0 3.5 -0.5" radius=".85" color="white"></a-sphere>
+        <!-- Eyes -->
+        <a-sphere position="-0.25 3.5 0.25" radius=".15" color="black"></a-sphere>
+        <a-sphere position="0.25 3.5 0.25" radius=".15" color="black"></a-sphere>
+        <!-- Nose and Arms -->
+        <a-cone position="0 3.25 0.5"  rotation="90 0 0" color="tomato" height="0.5" radius-bottom=".1" radius-top="0.01"></a-cone>
+        <a-cylinder position="-1.25 2.75 -0.25" color="#A52A2A" rotation="0 0 60" height="2" radius="0.15"></a-cylinder>
+        <a-cylinder position="1.25 2.75 -0.25" color="#A52A2A" rotation="0 0 -60" height="2" radius="0.15"></a-cylinder>
+      </a-box>
+
+      <a-box wireframe="true" height="8" width="4" depth="3" rotation="0 -30 180" position="3 5.3 2" scale="0.5 0.5 0.5"> 
+        <!-- Body -->
+        <a-sphere position="0 0.5 -0.5" radius="1.25" color="yellow"></a-sphere>
+        <a-sphere position="0 2.25 -0.5" radius="1.05" color="yellow"></a-sphere>
+        <a-sphere position="0 3.5 -0.5" radius=".85" color="yellow"></a-sphere>
+        <!-- Eyes -->
+        <a-sphere position="-0.25 3.5 0.25" radius=".15" color="black"></a-sphere>
+        <a-sphere position="0.25 3.5 0.25" radius=".15" color="black"></a-sphere>
+        <!-- Nose and Arms -->
+        <a-cone position="0 3.25 0.5"  rotation="90 0 0" color="tomato" height="0.5" radius-bottom=".1" radius-top="0.01"></a-cone>
+        <a-cylinder position="-1.25 2.75 -0.25" color="#A52A2A" rotation="0 0 60" height="2" radius="0.15"></a-cylinder>
+        <a-cylinder position="1.25 2.75 -0.25" color="#A52A2A" rotation="0 0 -60" height="2" radius="0.15"></a-cylinder>
+      </a-box>
       
 
       <!-- Task 3: Wrap the components below into an entity. "Label" it tree -->
       <!-- Task 4: Duplicate the tree to different locations and rotation -->
-        <!-- Trunk -->
+      <a-box wireframe="true" width="5" height="13" depth="5" class="tree" position="6 0.3 7.5"> 
+      <!-- Trunk -->
         <a-cylinder position="0 0 0" height="3" radius=".75" color="brown"></a-cylinder>
         <!-- Pines -->
         <a-cone position="0 1.5 0" height="1.5" radius-bottom="2" radius-top="0.1" color="green"></a-cone>
@@ -31,7 +76,43 @@
         <a-cone position="0 4.5 0" height="1.5" radius-bottom="1.1" radius-top="0.1" color="green"></a-cone>
         <a-cone position="0 5.5 0" height="1.5" radius-bottom="0.9" radius-top="0.1" color="green"></a-cone>
         <a-cone position="0 6.5 0" height="1.5" radius-bottom="0.7" radius-top="0.1" color="green"></a-cone>
-      
+      </a-box> 
+
+      <a-box wireframe="true" width="2.5" height="13" depth="2.5" class="tree" position="-5 0.3 3.5" rotation="-20 60 0" scale="0.5 0.5 0.5"> 
+      <!-- Trunk -->
+        <a-cylinder position="0 0 0" height="3" radius=".75" color="brown"></a-cylinder>
+        <!-- Pines -->
+        <a-cone position="0 1.5 0" height="1.5" radius-bottom="2" radius-top="0.1" color="green"></a-cone>
+        <a-cone position="0 2.5 0" height="1.5" radius-bottom="1.7" radius-top="0.1" color="green"></a-cone>
+        <a-cone position="0 3.5 0" height="1.5" radius-bottom="1.4" radius-top="0.1" color="green"></a-cone>
+        <a-cone position="0 4.5 0" height="1.5" radius-bottom="1.1" radius-top="0.1" color="green"></a-cone>
+        <a-cone position="0 5.5 0" height="1.5" radius-bottom="0.9" radius-top="0.1" color="green"></a-cone>
+        <a-cone position="0 6.5 0" height="1.5" radius-bottom="0.7" radius-top="0.1" color="green"></a-cone>
+      </a-box> 
+
+      <a-box wireframe="true" width="2.5" height="13" depth="2.5" position="-8 0.3 5" rotation="50 0 -45" scale="0.75 0.75 0.75" class="tree"> 
+      <!-- Trunk -->
+        <a-cylinder position="0 0 0" height="3" radius=".75" color="brown"></a-cylinder>
+        <!-- Pines -->
+        <a-cone position="0 1.5 0" height="1.5" radius-bottom="2" radius-top="0.1" color="green"></a-cone>
+        <a-cone position="0 2.5 0" height="1.5" radius-bottom="1.7" radius-top="0.1" color="green"></a-cone>
+        <a-cone position="0 3.5 0" height="1.5" radius-bottom="1.4" radius-top="0.1" color="green"></a-cone>
+        <a-cone position="0 4.5 0" height="1.5" radius-bottom="1.1" radius-top="0.1" color="green"></a-cone>
+        <a-cone position="0 5.5 0" height="1.5" radius-bottom="0.9" radius-top="0.1" color="green"></a-cone>
+        <a-cone position="0 6.5 0" height="1.5" radius-bottom="0.7" radius-top="0.1" color="green"></a-cone>
+      </a-box> 
+
+      <a-box wireframe="true" width="2.5" height="13" depth="2.5" position="3 0.3 8" rotation="-50 0 0" scale="0.75 0.75 0.75" class="tree"> 
+      <!-- Trunk -->
+        <a-cylinder position="0 0 0" height="3" radius=".75" color="brown"></a-cylinder>
+        <!-- Pines -->
+        <a-cone position="0 1.5 0" height="1.5" radius-bottom="2" radius-top="0.1" color="green"></a-cone>
+        <a-cone position="0 2.5 0" height="1.5" radius-bottom="1.7" radius-top="0.1" color="green"></a-cone>
+        <a-cone position="0 3.5 0" height="1.5" radius-bottom="1.4" radius-top="0.1" color="green"></a-cone>
+        <a-cone position="0 4.5 0" height="1.5" radius-bottom="1.1" radius-top="0.1" color="green"></a-cone>
+        <a-cone position="0 5.5 0" height="1.5" radius-bottom="0.9" radius-top="0.1" color="green"></a-cone>
+        <a-cone position="0 6.5 0" height="1.5" radius-bottom="0.7" radius-top="0.1" color="green"></a-cone>
+      </a-box> 
       
       <a-plane position="0 0 -1" rotation="-90 0 0" width="50" height="50" color="#7BC8A4"></a-plane>
       <a-sky color="#ECECEC"></a-sky>
