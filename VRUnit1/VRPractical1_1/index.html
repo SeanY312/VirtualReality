@@ -4,12 +4,36 @@
   </head>
   <body>
     <a-scene>
-      <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
-      <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
-      <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
-      <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
-      <a-sky color="#ECECEC"></a-sky>
-      <a-camera position="0 1.4 5"></a-camera>
+      <a-box wireframe="true" height="5" width="4" depth="9" position="0 2.5 0">
+        <!-- Body #6fd98b-->
+        <a-box height="0.8" width="3" depth="6" position="0 -1 0" rotation="0 0 0" color="#a89e9d"></a-box>
+        <a-box height="0.5" width="0.1" depth="6" position="-1.45 -0.45 0" rotation="0 0 0" color="#a89e9d"></a-box>
+        <a-box height="0.5" width="0.1" depth="6" position="1.45 -0.45 0" rotation="0 0 0" color="#a89e9d"></a-box>
+        <a-box height="0.5" width="0.1" depth="3" position="0 -0.45 2.95" rotation="0 90 0" color="#a89e9d"></a-box>
+        <a-box height="1" width="0.1" depth="3" position="0 -1 -3.3" rotation="0 90 -135" color="#a89e9d"></a-box>
+        <a-box height="1.5" width="3" depth="2" position="0 -0.25 0" color="#a89e9d" ></a-box>
+        <!-- Wheels -->
+        <!-- Wheel 1 -->
+        <a-cylinder src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLuDM5nhlQRL6FbwyD68iCp0cnRyj4-cRVEVdDXfXJ7g&s=10" color="#784a43" position="-1 -2 -2" radius="0.5" rotation="0 0 90" height="0.5"></a-cylinder>
+        <a-cylinder src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXK7sYA4Gl7En7dJuulvHxPyc7JYEQUQheBq4MVdwnhg&s=10" color="#784a43" position="-1.25 -2 -2" radius="0.5" rotation="0 0 90" height="0.01"></a-cylinder>
+        <a-cylinder src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXK7sYA4Gl7En7dJuulvHxPyc7JYEQUQheBq4MVdwnhg&s=10" color="#784a43" position="-0.75 -2 -2" radius="0.5" rotation="0 0 90" height="0.01"></a-cylinder>
+        <!-- Wheel 2 -->
+        <a-cylinder src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLuDM5nhlQRL6FbwyD68iCp0cnRyj4-cRVEVdDXfXJ7g&s=10" position="-1 -2 2" radius="0.5" rotation="0 0 90" height="0.5"></a-cylinder>
+        <a-cylinder src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXK7sYA4Gl7En7dJuulvHxPyc7JYEQUQheBq4MVdwnhg&s=10" position="-1.25 -2 2" radius="0.5" rotation="0 0 90" height="0.01"></a-cylinder>
+        <a-cylinder src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXK7sYA4Gl7En7dJuulvHxPyc7JYEQUQheBq4MVdwnhg&s=10" position="-0.75 -2 2" radius="0.5" rotation="0 0 90" height="0.01"></a-cylinder>
+        <!-- Wheel 3 -->
+        <a-cylinder src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLuDM5nhlQRL6FbwyD68iCp0cnRyj4-cRVEVdDXfXJ7g&s=10" position="1 -2 -2" radius="0.5" rotation="0 0 90" height="0.5"></a-cylinder>
+        <a-cylinder src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXK7sYA4Gl7En7dJuulvHxPyc7JYEQUQheBq4MVdwnhg&s=10" position="1.25 -2 -2" radius="0.5" rotation="0 0 90" height="0.01"></a-cylinder>
+        <a-cylinder src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXK7sYA4Gl7En7dJuulvHxPyc7JYEQUQheBq4MVdwnhg&s=10" position="0.75 -2 -2" radius="0.5" rotation="0 0 90" height="0.01"></a-cylinder>
+        <!-- Wheel 4 -->
+        <a-cylinder src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLuDM5nhlQRL6FbwyD68iCp0cnRyj4-cRVEVdDXfXJ7g&s=10" position="1 -2 2" radius="0.5" rotation="0 0 90" height="0.5"></a-cylinder>
+        <a-cylinder src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXK7sYA4Gl7En7dJuulvHxPyc7JYEQUQheBq4MVdwnhg&s=10" position="1.25 -2 2" radius="0.5" rotation="0 0 90" height="0.01"></a-cylinder>
+        <a-cylinder src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXK7sYA4Gl7En7dJuulvHxPyc7JYEQUQheBq4MVdwnhg&s=10" position="0.75 -2 2" radius="0.5" rotation="0 0 90" height="0.01"></a-cylinder>
+      </a-box>
+
+      <a-plane position="0 0 0" rotation="-90 0 0" width="10" height="10" color="pink"></a-plane>
+      <a-sky></a-sky>
+      <a-camera position="-3 2 -1"></a-camera>
     </a-scene>
   </body>
 </html>
