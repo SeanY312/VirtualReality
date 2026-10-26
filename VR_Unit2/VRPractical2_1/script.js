@@ -10,9 +10,11 @@ window.addEventListener("DOMContentLoaded",function() {
   for(let i = 0; i < 100; i++){
     let x = rnd(-20,20);
     let z = rnd(-20,20);
+    let x2 = x - 2;
+    let z2 = z - 2;
     createTree(x,-0.5,z);
     createCloud(x, 12, z);
-    createHouse(x - 2, z - 2);
+    createHouse(x2, z2);
   }
    //Task 2: Use the createCloud(...)  to add several clouds to the scene at various positions.
 
