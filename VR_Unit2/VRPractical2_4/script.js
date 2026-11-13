@@ -22,9 +22,9 @@ function loop(){
   for(rocket of rockets){
     rocket.launch();
   }
-  // for(ufo of ufos){
-  //   ufo.fall();
-  // }
+  for(ufo of ufos){
+    ufo.fall();
+  }
 
   window.requestAnimationFrame( loop );
 }
