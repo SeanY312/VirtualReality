@@ -3,6 +3,7 @@
     <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
     <script src="rocket.js"></script>
     <script src="ufo.js"></script>
+    <script src="bigufo.js"></script>
     <script src="script.js"></script>
   </head>
   <body>
@@ -21,6 +22,7 @@
       <img id="roof" src="https://cdn.architextures.org/textures/23/6/bitumen-stretcher-getr7m.jpg">
       <img id="garagewall" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj2sR7buHY1CVADTimIWU2JiiBcFdDak_1bVB-eHsyhHZso19FfNfE_rmm&s=10">
       <img id="ceiling" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV1-SCkbYSkV1lsyKZdnD5WrHGy6NScSNxfv6DeDwmew&s=10">
+      <img id="skin" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtytDN2e-WkZGntnnyuBePHdws4V4uQA1J0J7r6Pj8Dg&s=10">
     </a-assets>
     <a-entity class="WHOLE HOUSE">
       <a-entity class="TREE" position="6 0 5">
@@ -2187,12 +2189,11 @@
       <a-box width="2.1" height="0.1" depth="14" position="15.25 0.05 38" repeat="1 14" color="#cfada7" src="#concrete"></a-box>
       <a-box width="2.1" height="0.1" depth="14" position="-24.75 0.05 38" repeat="1 14" color="#72c26b" src="#concrete"></a-box>
       <a-sky src="#sky" repeat="5 5"></a-sky>
-        <!-- Challenge 1: Add a propriate plane and sky for the missile launch site -->
     
         
       
       <!-- Camera is added so that you do not "spawn" at the origin -->
-      <a-camera position="0 3 4"></a-camera>
+      <a-camera position="-10 3 4"></a-camera>
     </a-scene>
   </body>
 </html>
