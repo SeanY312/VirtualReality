@@ -1,9 +1,11 @@
 class Dude{
-  constructor(x,y,z){
+  constructor(x,y,z,speedz,speedy){
     this.x = x;
     this.y = y;
     this.z = z;
     //Challenge 1: Add delta variables in order to make the dude walk forward on the z axis and jump up and down on the y axis.
+    this.dy = speedy;
+    this.dz = speedz;
 
     this.obj = dudeTemplate.cloneNode(true);
     this.obj.setAttribute("position",{x:this.x,y:this.y,z:this.z});
@@ -11,8 +13,16 @@ class Dude{
   }
   jump(){
     //Challenge 2: Add the accumulators to modify the y and z variables
+    this.y += this.dy;
+    this.z += this.dz;
 
     //Challenge 3: Add the decision in order to alternate the delta on the y axis when the dude reaches less then 1 or greater than 2
+    if(this.y < 1 || this.y > 2){
+      this.dy *= -1;
+    }
+    if(this.z < -50 || this.z > 50){
+      this.dz *= -1;
+    }
 
     this.obj.setAttribute("position",{x:this.x,y:this.y,z:this.z});
   }

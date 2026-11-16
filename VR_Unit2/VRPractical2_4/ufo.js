@@ -336,6 +336,8 @@ fall(){
   this.x += this.dx;
   this.z += this.dz;
   this.r += this.dr;
+  console.log("rotation " + this.r);
+  console.log("time " + this.time);
   this.obj.setAttribute("position", {x:this.x, y:this.y, z:this.z});
   this.c.setAttribute("rotation", {x:0, y:this.r, z:0});
   this.time += 1;
@@ -345,15 +347,15 @@ fall(){
     this.z = rnd(-75,75);
     this.obj.setAttribute("position", {x:this.x, y:20, z:this.z});
   }
-  if(this.time % 5000){
+  if(this.time % 500 == 0){
     this.dx = (rnd(10,30) - 20) / 10;
     this.dz = (rnd(10,30) - 20) / 10;
   }
   if(this.x < -75 || this.x > 75){
     this.dx *= -1;
   }
-  if(this.y < -75 || this.y > 75){
-    this.dy *= -1;
+  if(this.z < -75 || this.z > 75){
+    this.dz *= -1;
   }
 }
 }
