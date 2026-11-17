@@ -9,10 +9,13 @@
         <img src="target.png" id="crosshairs"/>
       </a-assets>
       
-      <a-box id="target" src="#crosshairs" position="0 0 0" depth="0.1" ></a-box>
+      <a-box wireframe="true" position="0 0 0" id="wholetarget">
+        <a-box id="target" src="#crosshairs" position="0 1 0" depth="0.1" ></a-box>
+        <a-cylinder color="black" radius="0.1" position="0 0.25 0" height="0.5"></a-cylinder>
+      </a-box>
 
       <a-plane position="0 0 0" rotation="-90 0 0" width="10" height="10" color="#7BC8A4"></a-plane>
-      <a-sky color="#ECECEC"></a-sky>
+      <a-sky color="#0099EE"></a-sky>
       <a-camera position="0 1.4 3"></a-camera>
     </a-scene>
   </body>
